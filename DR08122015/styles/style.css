@@ -1,0 +1,209 @@
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    font-family: tahoma;
+    border: 5px solid black;
+    border-radius: 15px 15px 0 0;
+    background-color: rgba(0,0,0,0.07);
+}
+
+header > h1 {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#main-navogation-bar {
+    height: 50px;
+    background-color: rgb(192,192,192);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+#left-side {
+    width: 600px;
+    display: inline-block;
+}
+
+#right-side {
+    width: 290px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card {
+    width: 500px;
+    margin: 20px 0 20px 25px;
+    transition: all 0.1s ease;
+    position: relative;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card-box {
+    border: 3px solid black;
+}
+
+.card-box > img {
+    margin: 10px 0 0 110px;    
+}
+
+.rating {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+}
+
+.rating > i {
+  font-size: 20px;
+}
+
+.delete-button {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+.delete-button:hover {
+    font-size: 20px;
+    color: red;
+    transition: all 0.1s ease;
+}
+
+.comment-button {
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.comment-button:hover { 
+    background-color: white;
+    color: black;
+}
+
+#add-button{
+    margin: 20px 0 0 95px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+#add-button:hover { 
+    background-color: white;
+    color: black;
+}
+
+#link-section {
+    font-size: 20px;
+    border: 3px solid black;
+    margin: 20px;
+}
+
+#link-section-title {
+    border-bottom: 3px solid black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+#link-section-links a {
+    text-decoration: none;
+}
+
+#link-section-links li {
+    margin: 10px 0 0 -10px;
+    list-style-type: none;
+}
+
+.add-link {
+    font-size: 30px;
+    text-align: right;
+    display: inline-block;
+    margin: 25px 0 0 215px;
+}
+
+.add-link:hover {
+    color: blue;
+}
+
+#comment-section {
+    font-size: 20px;
+    border: 3px solid black;
+    margin: 20px 20px 20px 20px;
+}
+
+#comment-section-title {
+    border-bottom: 3px solid black;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+#comment-section-comments {
+    list-style-type: none;
+}
+
+#comment-section-comments li {
+    margin: 10px 10px 10px -20px;
+}
+
+#pictures-section {
+    width: 845px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 0 25px 0 25px;
+}
+
+.pictures-section-picture {
+    margin: 30px 0 0 28px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#page-navigation {
+    display: inline-block;
+    width: 80px;
+    margin-left: 800px;
+}
+
+.number-of-page {
+    background-color: black;
+    color: white;
+}
+
+.number-of-page:hover { 
+    background-color: white;
+    color: black;
+}
+
+.selected {
+    background-color: white;
+    color: black;
+}

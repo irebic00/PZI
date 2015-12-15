@@ -1,0 +1,101 @@
+/*select element by type */
+body { font-family: Georgia; }
+
+/*select element by unique id */
+#blabla { background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    line-height:1.5;
+}
+
+#blabla strong {
+    border: 2px solid red;
+    background-color: pink;
+    padding: 0 4px;
+}
+
+
+#blabla > em {
+    color: green;
+    font-weight: bolder;
+}
+
+body > img { 
+    width: 250px;
+    border-radius: 50%;
+}
+
+#subjects-table,
+#subjects-table th,
+#subjects-table td {
+    border: 2px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+/*dohvati po klasi*/
+.professor-cell {
+    color: green;
+}
+
+.senior {
+    font-weight: bolder;
+}
+
+#subjects-table > thead > tr{
+    background-color:lightgray;
+}
+
+#subjects-table > tbody > tr:nth-child(2n) {
+    background-color: lightblue;
+}
+#subjects-table > tbody > tr:nth-child(2n+1) {
+    background-color: lightcoral;
+}
+
+#login-form {
+    margin-top: 15px;
+    padding: 1rem; /*bolje od jedinice px je rem*/
+    background-color: lightgray;
+}
+
+#login-form input {
+    margin: 1rem;
+}
+
+#login-form input[type="text"] {
+    color: green;
+}
+
+#login-form input[type="password"] {
+    color: red;
+}
+
+input:hover {
+    border: 2px solid yellow;
+}
+
+input:active {
+    border: 2px solid red;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+#zad1 {
+    text-align: center;
+}
+
+#login-form input[type="text"] {
+    font-weight: bolder;
+}
+
+.user-pass {
+    font-weight: bolder;
+}
+
+/*
+mozilla developer
+w3 school
+*/

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>PZI DomaciRad 3</title>
+        <link rel="stylesheet" href="styles/font-awesome.min.css"/>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <script type="text/template" id="news-template">
+            <article class="card">
+                <i class="fa fa-times delete-button"></i>
+                <div class="card-box">
+                    <img src="{{imageUrl}}" alt="{{car_name}}"/>
+                    <h2>{{car_name}}</h2>
+                    <div class="rating">
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <input class="comment-button" type="button" value="Komentiraj"/>
+            </article>
+        </script>
+        <script type="text/template" id="comment-template">
+            <li><strong>{{name}} ({{onNews}}): </strong><a>{{comment}}</a></li>
+        </script>
+        <script type="text/template" id="link-template">
+            <li><a href="{{pageUrl}}">{{linkText}}</a></li>
+        </script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Auto-moto</h1>
+        </header>
+        
+        <main>
+            <div id="main-navogation-bar">
+                <ul class="menu left">
+                    <li><a href="http://www.sportscarmarket.com/">Sports Car Market</a></li>
+                    <li><a href="http://www.automoto.hr/">Automoto</a></li>
+                </ul>
+                <ul class="menu right">
+                    <li><a>Glavna <i class="fa fa-long-arrow-right"></i> Noviteti</a></li>
+                </ul>
+            </div>
+            <aside id="left-side">
+                <article class="card">
+                    <i class="fa fa-times delete-button"></i>
+                    <div class="card-box">
+                        <img src="images/newsHeadings/db10.jpg" alt="db10"/>
+                        <h2>Aston Martin DB10</h2>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <input class="comment-button" type="button" value="Komentiraj"/>
+                </article>
+                <article class="card">
+                    <i class="fa fa-times delete-button"></i>
+                    <div class="card-box">
+                        <img src="images/newsHeadings/mustang.jpg" alt="mustang"/>
+                        <h2>Mustang GT Shelby</h2>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                    </div>
+                    <input class="comment-button" type="button" value="Komentiraj"/>
+                </article>
+            </aside>
+            <aside id="right-side">
+                <input id="add-button" type="button" value="Dodaj vijest"/>
+                <article id="link-section">
+                    <h2 id="link-section-title">
+                        Poveznice
+                    </h2>
+                    <ul id="link-section-links">
+                        <li><a href="http://www.astonmartin.com/">Aston Martin</a></li>
+                        <li><a href="http://www.ford.com/">Ford</a></li>
+                    </ul>
+                    <i class="fa fa-plus-square-o add-link"></i>
+                </article>
+                <article id="comment-section">
+                    <h2 id="comment-section-title">
+                        Komentari
+                    </h2>
+                    <ul id="comment-section-comments">
+                        <li><strong>Mate Matic: </strong><a>Hello Jure</a></li>
+                        <li><strong>Jure Juric: </strong><a>Hello Mate</a></li>
+                    </ul>
+                </article>
+            </aside>
+            <aside id="pictures-section">
+                <img src="images/footerImages/mercedes-benz.jpg" alt="mercedes" class="pictures-section-picture"/>
+                <img src="images/footerImages/bentley.jpg" alt="bentley" class="pictures-section-picture"/>
+                <img src="images/footerImages/ferrari.jpg" alt="ferrari" class="pictures-section-picture"/>
+            </aside>
+            
+            <div id="page-navigation">
+                <input class="number-of-page selected" type="button" value="1"/>
+                <input class="number-of-page" type="button" value="2"/>
+                <input class="number-of-page" type="button" value="3"/>
+            </div>
+        </main>
+        
+        <footer>
+            Copyright: Ivan Viseslav Rebic, FESB - PZI Domaci rad
+        </footer>
+        
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/mustache.js"></script>
+        <script src="scripts/page.js"></script>
+    </body>
+</html>

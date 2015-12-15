@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    font-family: Georgia;
+}
+
+header {
+	background-color: #2d5c88;
+	color: white;
+	height: 40px;
+}
+
+header .title {
+	margin: 5px;
+	font-size: 150%;
+}
+
+#search-container {
+	margin-right: 10px;
+	padding-top: 5px;
+}
+
+#search-container .search-icon{
+    margin: 4px 2px;
+}
+
+#search-container .search-icon-container {
+	width: 24px;
+	height: 24px;
+	background-color: white;
+	display: inline-block;
+	vertical-align: middle;
+	color: gray;
+	margin-right: -4px;
+	border-radius: 4px 0 0 4px; /*topleft, topright, bottom right, bottom left*/
+}
+
+#search-box {
+	padding: 0;
+	margin: 0;
+	border: none;
+	line-height: 1.2;
+	height: 24px;
+	vertical-align: middle;
+	border-radius: 0 4px 4px 0;
+}
+
+footer {
+	background-color: #4e4e4e;
+	color: #8e8e8e;
+	text-align: center;
+	padding: 0.5rem 0;
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+main{
+    width: 900px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#fesb-logo-container{
+    float: left;
+}
+
+#main-container-header .menu > li
+{
+	display: inline-block;
+	padding-right: 10px;
+}
+
+#main-container-header .menu > li:last-of-type
+{
+	padding-right: 0;
+}
+
+#main-container-header .menu > li a
+{
+	padding: 5px;
+	background-color: #96AEC4;
+	text-decoration: none;
+	color: white;
+}
+
+#main-container-header .menu > li a:hover
+{
+	border-bottom:solid #ABBECF;
+}
+
+#main-container-header .menu > li a.selected
+{
+	border-bottom:solid #2d5c88;
+}
+
+.left {
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.cf {
+    clear: both;
+}
+
+#thumbnail-container > .thumbnail {
+	display: inline-block;
+	margin-right: 2px;
+	width: 175px;
+	cursor: pointer;
+}
+
+#thumbnail-container > .thumbnail:last-of-type {
+	margin-right: 0;
+}
+
+#thumbnail-container > .thumbnail:hover {
+	border-bottom:solid #ABBECF;
+}
+
+#thumbnail-container > .thumbnail.selected {
+	border-bottom:solid #2d5c88;
+}
+
+#cards-container .card {
+	display:inline-block;
+	width: 272px;
+	margin-right: 10px;
+	text-align: justify;
+	margin-bottom: 10px;
+	background-color: rgba(0,0,0,0.14);
+	padding: 0.5rem 0.3rem;
+	vertical-align: top;
+	cursor: pointer;
+	transition: all 0.1s ease;
+	position: relative;
+}
+
+#cards-container .card:hover{
+	transform: scale(1.01);
+}
+
+.card .delete-button{
+	position: absolute;
+	right: -0.2rem;
+	top: -0.5rem;
+	color: gray;
+}
+
+#slider {
+	position: relative;
+}
+
+#slider .arrow-left {
+    left: -40px;
+}
+
+#slider .arrow-right {
+    right: -40px;
+}
+
+#slider .arrow {
+    text-decoration: none;
+    color: gray;
+    font-size: 250%;
+    cursor: pointer;
+    font-weight: 900;
+    position: absolute;
+    bottom: 50%;
+}
+
+.button{
+	background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0.2rem;
+    border:none;
+}
+
+.button:active{
+	background: #124668;
+    background-image: -webkit-linear-gradient(top, #124668, #2980b9);
+    background-image: -moz-linear-gradient(top, #124668, #2980b9);
+    background-image: -ms-linear-gradient(top, #124668, #2980b9);
+    background-image: -o-linear-gradient(top, #124668, #2980b9);
+    background-image: linear-gradient(to bottom, #124668, #2980b9);
+}
+
+.comment-container{
+	border-top: solid 1px gray;
+}
+
+.user-label{
+	font-weight: 900;
+}

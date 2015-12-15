@@ -1,0 +1,144 @@
+body {
+    font-family: georgia;
+    margin: 0px;
+}
+
+header {
+    background-color: #2d5c88;
+    height: 40px;
+    color: white;
+}
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+header .title {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+#search-container {
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+#fesb-logo-container {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: #4e4e4e;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #8e8e8e;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#search-container .search-icon-container {
+    display: inline-block;
+    background-color: white;
+    color: gray;
+    width: 24px;
+    height: 24px;
+    margin-right: -4px;
+    vertical-align: middle;
+    border-radius: 4px 0 0 4px;
+}
+
+#search-box {
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    border: none;
+    height: 24px;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+}
+
+#search-container .search-icon {
+    margin: 4px;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.menu > li:last-of-type {
+    margin-right: 0;
+}
+
+.menu a {
+    padding: 0.5rem;
+    background-color: #96aec4;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a.selected {
+    border-bottom: solid #2d5c88;
+}
+
+.menu a:not(.selected):hover {
+    border-bottom: solid #abbecf;
+}
+
+#thumbnail-container > .thumbnail {
+     display: inline-block;
+     margin-right: 1px;
+     margin-left: 0px;
+     width: 175px;
+}
+
+#thumbnail-container > .thumbnail:last-of-type {
+    margin-right: 0;
+}
+
+#thumbnail-container > .thumbnail.selected {
+     border-bottom: solid #2d5c88;   
+}
+
+#thumbnail-container > .thumbnail:not(.selected):hover{
+    border-bottom: solid #abbecf;
+}
+
+#cards-container > .card {
+    width: 272px;
+    display: inline-block;
+    background-color: rgba(0,0,0, 0.14);
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.3rem;
+    vertical-align: top;
+    position: relative;
+    transition: all 0.1s ease;
+}
+
+.card .delete-button {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+#cards-container > .card:hover{
+    transform: scale(1.01);
+}
+
+main {
+    width: 900px;
+    margin: 35px auto 35px auto;
+}
+
+#fesb-logo-container {
+     display: inline-block;
+}

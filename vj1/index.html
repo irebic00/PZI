@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- verzija -->
+<html>
+    <head> <!-- metainfo o stranici-->
+    <meta charset="utf-8"/>
+        <title>PZI - Vježba 1</title>
+    </head>
+    
+    <body>
+        <h1>
+            Programiranje za Internet - Uvod
+        </h1>
+        
+        <p>
+            Moje ime je <strong>Ivan V. Rebic</strong>,
+            a ovo je kolegij <em>PZI</em>. Više o meni na <a href="#biography">životopisu</a>
+        </p>
+        
+        <img alt="Grad1" src="http://apartments-pisak.com/wp-content/uploads/2013/10/RivaSplit.jpg"/>
+        <br/>
+        <img alt="Grad2" src="Images/split.jpg">
+        <hr/>
+        
+        <h2 id="biography">Životopis</h2>
+        
+        <ul>
+            <li>Rođen sam u <a href="https://hr.wikipedia.org/wiki/Split">Splitu</a></li>
+            <li>Završena srednja škola <a href="http://gimnazija-mujevica-im.skole.hr/" target="_blank">Gimnazija dr. Mate Ujevića</a> u Imotskom</li>
+            <li>Trenutno na <a href="http://www.fesb.hr" target="_blank">FESB</a>-u</li>
+        </ul>
+        
+        <h2>Popis predmeta</h2>
+        <table border="1"> <!-- Atribute izgleda NE KORISTIMO (npr border), obrađuju se u CSS-u -->
+            <thead>
+                <tr>
+                    <th>Predmet</th>
+                    <th>Profesor</th>
+                    <th>Informacija</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Matematika 1</td>
+                    <td>Josipa Barić</td>
+                    <td>Položeno</td>
+                </tr>
+                <tr>
+                    <td>Fizika 1</td>
+                    <td>Damir Lelas</td>
+                    <td>Položeno</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">@FESB</td>
+                    <td>2015</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <form>
+            Username: <input type="text" placeholder="Unesi ime"/> <br/>
+            Password: <input type="password"/> <br/>
+            <input type="button" value="Login"/>
+        </form>
+    </body>
+</html>
